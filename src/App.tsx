@@ -13,6 +13,7 @@ import { BenefitsPage } from '@/pages/benefits'
 import { CompliancePage } from '@/pages/compliance'
 import { AnalyticsPage } from '@/pages/analytics'
 import { SettingsPage } from '@/pages/settings'
+import { DocumentsPage } from '@/pages/documents'
 
 function ProtectedLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -57,6 +58,7 @@ export default function App() {
       <Route path="/compliance"  element={<ProtectedRoute><CompliancePage /></ProtectedRoute>} />
       <Route path="/analytics"   element={<ProtectedRoute><AnalyticsPage /></ProtectedRoute>} />
       <Route path="/settings"    element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
+      <Route path="/documents"   element={<ProtectedRoute><DocumentsPage /></ProtectedRoute>} />
       <Route path="*"            element={<Navigate to="/dashboard" replace />} />
     </Routes>
   )
