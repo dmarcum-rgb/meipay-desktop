@@ -21,7 +21,7 @@ const headcountData = [
 
 const payrollData = [
   { month: 'Aug', amount: 635000 },
-  { month: 'Sep', count: 628000 },
+  { month: 'Sep', amount: 628000 },
   { month: 'Oct', amount: 641000 },
   { month: 'Nov', amount: 655000 },
   { month: 'Dec', amount: 672000 },
